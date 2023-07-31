@@ -21,7 +21,7 @@ export default statsindex
 import Scraper from "../../utils/scraper";
 
 export default function Stats(props) {
-  console.log(props.loadedData);
+  const playersAndSalaries = props.loadedData;
   return <div>Stats</div>;
 }
 
