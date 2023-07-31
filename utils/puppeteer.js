@@ -87,16 +87,39 @@ class Scraper {
     console.log(brooklynNetsLink);
   }
 
+  async getPlayersAndSalaries() {
+    // target html table element holding players and salaries
+    // iterate through each player. retrieve each name and salary, store in object and place in array
+    return await this.page.$$eval("#salaries2 > tbody > tr", (players) => {
+      let playersSalaries = [];
+      for (let idx = 0; idx < players.length; idx++) {
+        let playerInfo = players[idx].querySelectorAll("td");
+        let name = playerInfo[0].innerText;
+        let salary = playerInfo[1].innerText;
+        playersSalaries.push({ name, salary });
+      }
+
+      return playersSalaries;
+    });
+  }
+
   async getStats() {
     //Start the browser and create a browser instance
     await this.createBrowserInstance();
     // create new webpage for Puppeteer to scrap
     await this.initNewPage();
-    await this.getTeamURL();
+    let teamURL = await this.getTeamURL();
 
-    // Pass the browser instance to the scraper controller
-    // const jsonData = await scraperController(this.browserInstance);
-    // console.log(jsonData);
+    // reset class url variable to team's url
+    // it might be better to NOT set url as class variable, but pass it around.
+    this.url = teamURL;
+
+    // create new browser and page and then get salaries.
+    await this.createBrowserInstance();
+    await this.initNewPage();
+    let data = await this.getPlayersAndSalaries();
+
+    console.log(data);
   }
 }
 
