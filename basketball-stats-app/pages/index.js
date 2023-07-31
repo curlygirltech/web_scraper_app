@@ -1,9 +1,6 @@
-//Landing Home page
-import { Fragment } from 'react'
-import Link from 'next/link'
-import Home from '/components/home-page/Home'
-
-
+// Landing Home page
+import { Fragment } from "react";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -11,16 +8,12 @@ const HomePage = () => {
       <h1>BASKETBALL STATISTICS HOME PAGE</h1>
       <ul>
         <li>
-          <Link href="/stats/salary-data">
-            Get the most current salary statistics
-          </Link>
+          <Link href="/stats">go to stats page</Link>
+          <Link href="/api/route">Get the most current salary statistics</Link>
         </li>
       </ul>
-
-      <Home />
-
     </Fragment>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

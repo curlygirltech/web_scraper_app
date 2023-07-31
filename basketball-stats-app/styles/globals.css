@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Lato", sans-serif;
+  color: #414141;
+  background-color: #e4f1f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  color: #2b2b2b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: 1px;
+  background-color: #f88158;
+  border: transparent;
+  border: 1px solid #733d2b;
+  border-radius: 6px;
+
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out all;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6a49;
+  border-color: #653424;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 10%;
+  height: 5rem;
+  background-color: #202020;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Fira", sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f88158;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f88158;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #f88158;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .navigation a {
+    font-size: 1.5rem;
+  }
+}
+
+.item {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+  height: 10rem;
+}
+
+.content {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.content h2 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.actions a {
+  display: block;
+}
+
+.actions a span {
+  vertical-align: middle;
+}
+
+.icon {
+  margin-left: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex-direction: row;
+  }
+
+  .item img {
+    width: 40%;
+    height: 14rem;
+  }
+
+  .content {
+    width: 60%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .content h2 {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .actions {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.list {
+  width: 90%;
+  max-width: 40rem;
+  margin: 5rem auto;
+}
