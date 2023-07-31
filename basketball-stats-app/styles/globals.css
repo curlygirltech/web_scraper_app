@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 
@@ -9,24 +10,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+>>>>>>> ae63e6d (configured puppeteer to run on server-side component)
 * {
   box-sizing: border-box;
 }
 
 body {
+<<<<<<< HEAD
 
   background-color: rgb(250, 215, 150);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+=======
+>>>>>>> ae63e6d (configured puppeteer to run on server-side component)
   margin: 0;
   font-family: "Open Sans", "Lato", sans-serif;
   color: #414141;
   background-color: #e4f1f1;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ae63e6d (configured puppeteer to run on server-side component)
 h1,
 h2,
 h3,
