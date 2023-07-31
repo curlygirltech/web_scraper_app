@@ -10,14 +10,13 @@ class Scraper {
     this.browserInstance;
     // add headless: false if you want to see the webpages open
     try {
-      console.log("Opening the browser......");
       this.browserInstance = await puppeteer.launch({
         headless: false,
         args: ["--disable-setuid-sandbox"],
         ignoreHTTPSErrors: true,
       });
     } catch (err) {
-      console.log("Could not create a browser instance => : ", err);
+      // what would we like to do if error occurs?
     }
   }
 
@@ -39,7 +38,6 @@ class Scraper {
     this.page = await this.browserInstance.newPage();
     await this.blocker();
 
-    console.log(`Navigating to ${this.url}...`);
     // Navigate to the selected page
     await this.page.goto(this.url);
   }
@@ -78,13 +76,11 @@ class Scraper {
       }
     );
 
-    // console.log(divisionTeamsUrls);
     // retrieve link for brooklyn nets
     let brooklynNetsLink = divisionTeamsUrls.Atlantic.find((link) =>
       link.includes("BRK")
     );
-
-    console.log(brooklynNetsLink);
+    return brooklynNetsLink;
   }
 
   async getPlayersAndSalaries() {
@@ -118,8 +114,6 @@ class Scraper {
     await this.createBrowserInstance();
     await this.initNewPage();
     let data = await this.getPlayersAndSalaries();
-
-    console.log(data);
   }
 }
 
