@@ -1,8 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 
+=======
+>>>>>>> ad6b16c (Rebase)
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+=======
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
+>>>>>>> 9eb9c77 (update components)
 
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
@@ -20,6 +26,7 @@
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   background-color: rgb(250, 215, 150);
   display: flex;
@@ -28,6 +35,8 @@ body {
   justify-content: center;
 =======
 >>>>>>> ae63e6d (configured puppeteer to run on server-side component)
+=======
+>>>>>>> ad6b16c (Rebase)
   margin: 0;
   font-family: "Open Sans", "Lato", sans-serif;
   color: #414141;
@@ -212,3 +221,12 @@ ul {
   max-width: 40rem;
   margin: 5rem auto;
 }
+=======
+  background-color: rgb(250, 215, 150);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+>>>>>>> 9eb9c77 (update components)

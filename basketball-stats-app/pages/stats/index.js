@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Scraper from '../../utils/scraper'
 
 export default function Stats(props) {
@@ -37,3 +38,7 @@ export async function getStaticProps() {
   };
 >>>>>>> ae63e6d (configured puppeteer to run on server-side component)
 }
+=======
+
+export default statsindex
+>>>>>>> ad6b16c (Rebase)
