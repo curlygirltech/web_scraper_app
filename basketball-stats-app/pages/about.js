@@ -1,12 +1,9 @@
-
-import Link from 'next/link'
-import Mainheader from '/components/MainHeader'
-
-const About = () => {
+function aboutPage() {
   return (
-    <>
-      <Mainheader />
-      <div>About us!</div>
-    </>
-  )
+    <div>
+      <h1>About Page</h1>
+    </div>
+  );
 }
+
+export default aboutPage;

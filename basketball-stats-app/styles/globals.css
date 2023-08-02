@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 
@@ -8,16 +9,29 @@
 >>>>>>> ad6b16c (Rebase)
 =======
 >>>>>>> 3980842 (Rebasing issues)
+=======
+>>>>>>> 3e80183 (update components)
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 =======
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 >>>>>>> 9eb9c77 (update components)
 =======
+=======
+>>>>>>> e9d5044 (update components)
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
 =======
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 >>>>>>> ae63e6d (configured puppeteer to run on server-side component)
+<<<<<<< HEAD
 >>>>>>> 343fcd0 (Rebasing issues)
+=======
+=======
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+=======
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
+>>>>>>> 9eb9c77 (update components)
+>>>>>>> 52ebe91 (update components)
+>>>>>>> e9d5044 (update components)
 
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
@@ -37,6 +51,7 @@ body {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   background-color: rgb(250, 215, 150);
   display: flex;
@@ -49,6 +64,8 @@ body {
 >>>>>>> ad6b16c (Rebase)
 =======
 >>>>>>> 3980842 (Rebasing issues)
+=======
+>>>>>>> 3e80183 (update components)
   margin: 0;
   font-family: "Open Sans", "Lato", sans-serif;
   color: #414141;
@@ -236,6 +253,8 @@ ul {
 =======
 =======
 >>>>>>> 343fcd0 (Rebasing issues)
+=======
+>>>>>>> e9d5044 (update components)
   background-color: rgb(250, 215, 150);
   display: flex;
   flex-direction: column;
@@ -247,6 +266,8 @@ ul {
 >>>>>>> 9eb9c77 (update components)
 =======
 =======
+=======
+>>>>>>> 52ebe91 (update components)
   margin: 0;
   font-family: "Open Sans", "Lato", sans-serif;
   color: #414141;
@@ -427,5 +448,20 @@ ul {
   max-width: 40rem;
   margin: 5rem auto;
 }
+<<<<<<< HEAD
 >>>>>>> ae63e6d (configured puppeteer to run on server-side component)
+<<<<<<< HEAD
 >>>>>>> 343fcd0 (Rebasing issues)
+=======
+=======
+=======
+  background-color: rgb(250, 215, 150);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+>>>>>>> 9eb9c77 (update components)
+>>>>>>> 52ebe91 (update components)
+>>>>>>> e9d5044 (update components)
