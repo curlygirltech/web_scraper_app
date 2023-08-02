@@ -11,7 +11,7 @@ class Scraper {
     // add headless: false if you want to see the webpages open
     try {
       this.browserInstance = await puppeteer.launch({
-        headless: false,
+        headless: "new",
         args: ["--disable-setuid-sandbox"],
         ignoreHTTPSErrors: true,
       });
@@ -72,6 +72,7 @@ class Scraper {
           }
           teams[divisionName] = hrefs;
         });
+
         return teams;
       }
     );
@@ -80,6 +81,7 @@ class Scraper {
     let brooklynNetsLink = divisionTeamsUrls.Atlantic.find((link) =>
       link.includes("BRK")
     );
+
     return brooklynNetsLink;
   }
 
@@ -114,6 +116,7 @@ class Scraper {
     await this.createBrowserInstance();
     await this.initNewPage();
     let data = await this.getPlayersAndSalaries();
+
     let dataJSON = JSON.stringify(data);
     return dataJSON;
   }
